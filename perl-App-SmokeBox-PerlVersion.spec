@@ -1,15 +1,15 @@
 %define upstream_name    App-SmokeBox-PerlVersion
-%define upstream_version 0.08
+%define upstream_version 0.16
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	SmokeBox helper module to determine perl version
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/App/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/App/App-SmokeBox-PerlVersion-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(IPC::Cmd)
@@ -48,4 +48,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sat Dec 25 2010 Shlomi Fish <shlomif@mandriva.org> 0.80.0-1mdv2011.0
 + Revision: 625083
 - import perl-App-SmokeBox-PerlVersion
+
 
