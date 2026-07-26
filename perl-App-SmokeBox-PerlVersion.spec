@@ -1,15 +1,13 @@
 %define upstream_name    App-SmokeBox-PerlVersion
-%define upstream_version 0.16
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.16
+Release:	5
 
 Summary:	SmokeBox helper module to determine perl version
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/bingos/app-smokebox-perlversion
-Source0:	https://cpan.metacpan.org/authors/id/B/BI/BINGOS/App-SmokeBox-PerlVersion-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BI/BINGOS/App-SmokeBox-PerlVersion-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -24,7 +22,7 @@ App::SmokeBox::Mini manpage and the minismokebox manpage that determines
 and version and architecture of a given 'perl' executable.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
